@@ -1,22 +1,23 @@
 #include <Servo.h>
 
 int IR = 8;
+Servo servo
 
 void setup() {
   pinMode(IR, INPUT);
-  Servo.attach(9);   
-  Servo.write(0);    
+  servo.attach(9);   
+  servo.write(0);    
 }
 
 void loop() {
 
 
   if (digitalRead(IR) == LOW) {
-    Servo.write(90);   
+    servo.write(90);   
     delay(3000);
   } 
   else {
-    Servo.write(0);   
+    servo.write(0);   
     delay(500);
   }
 }
