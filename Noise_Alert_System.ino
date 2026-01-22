@@ -11,9 +11,9 @@ void setup() {
 }
 
 void loop() {
-  int soundValue = analogRead(sound);
+ 
 
-  if (soundValue > threshold) {
+  if (analogRead(sound) > threshold) {
     // sound DETECTED
     digitalWrite(ledPin, HIGH);
     tone(buzzerPin, 1900);
