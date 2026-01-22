@@ -16,21 +16,6 @@ if (digitalRead(IR) == LOW) {
 
   tone(buzzer,1000, 1000);
   delay(500);
-  tone(buzzer,800, 800);
-  delay(500);
-  tone(buzzer,1000, 1000);
-  delay(500);
-  tone(buzzer,800, 800);
-  delay(500);
-  tone(buzzer,1000, 1000);
-  delay(500);
-  tone(buzzer,800, 800);
-  delay(500);
-  tone(buzzer,1000, 1000);
-  delay(500);
-  tone(buzzer,800, 800);
-  delay(500);
-
  
 }
 
