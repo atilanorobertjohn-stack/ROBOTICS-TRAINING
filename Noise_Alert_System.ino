@@ -13,7 +13,8 @@ void loop() {
  
 
   if (analogRead(sound) > threshold) {
-    tone(buzzer, 1900);
+    tone(buzzer, 500);
+    delay(5000);
    
 
   }
