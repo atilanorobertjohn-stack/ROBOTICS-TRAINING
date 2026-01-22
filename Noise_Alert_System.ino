@@ -1,11 +1,10 @@
 int sound = A0;     
-int led = 8;       
 int buzzer = 9;     
 int threshold = 75;   
 
 
 void setup() {
-  pinMode(led, OUTPUT);
+  
   pinMode(buzzer, OUTPUT);
 
 }
@@ -20,7 +19,6 @@ void loop() {
   }
   else {
     
-    digitalWrite(led, LOW);
     noTone(buzzer);
   }
 
