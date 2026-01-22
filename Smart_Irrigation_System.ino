@@ -12,12 +12,13 @@ void loop() {
 
   if (digitalRead(soil) == LOW) {      
     
-    digitalWrite(relayPin, HIGH);   
+    digitalWrite(relay, HIGH);   
   } 
   else {
     
-    digitalWrite(relayPin, LOW); 
+    digitalWrite(relay, LOW); 
+    delay(200);
   }
 
-  delay(200);
+
 }
